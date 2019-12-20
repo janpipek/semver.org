@@ -41,7 +41,7 @@ Specifikace Sémantického verzování (SemVer)
 (výrazy jsou interpretované z dokumentu: [RFC 2119](http://tools.ietf.org/html/rfc2119))
 
 
-1. Software používající Sémantické verzování, MUSÍ mít nadefinované API, buďto přímo ve zdrojovém kódu a nebo v externí dokumentaci. V obou případech to musí být hlavně přesné a komplexní.
+1. Software používající Sémantické verzování MUSÍ mít nadefinované API, buďto přímo ve zdrojovém kódu, anebo v externí dokumentaci. V obou případech musí být hlavně přesné a komplexní.
 
 2. Číslo verzí MUSÍ být ve formátu X, Y, Z. Jedná se o celá nezáporná čísla, přičemž X se NESMÍ rovnat hodnotě nula. Může se rovnat nule jen v případě, kdy se jedná o počáteční vývoj. X je číslo MAJOR verze, Y je číslem MINOR verze a Z je číslem PATCH verze, přičemž každé číslo má svoji hodnotu a navyšují se zvlášť a standardně, např.1.9.0 => 1.10.0 => 1.11.0.
 
@@ -49,9 +49,9 @@ Specifikace Sémantického verzování (SemVer)
 
 4. MAJOR verze s hodnotou 0 (0.y.z.) je určena pro počáteční vývoj. Cokoliv se může změnit a API v tomto formátu by NEMĚLO být považováno za stabilní.
 
-5. Verze 1.0.0 definuje veřejně vydané API. Způsob, jakým se dále navyšuje číslo verze je ovlivněné tímto API a jeho změnami.
+5. Verze 1.0.0 definuje veřejně vydané API. Způsob, jakým se dále navyšuje číslo verze, je ovlivněné tímto API a jeho změnami.
 
-6. Číslo PATCH (Z) MUSÍ být navýšené jenom pokud byly implentované zpětně kompatibilní opravy chyb. Oprava chyb je definována jako interní změna opravující nežádoucí chování programu.
+6. Číslo PATCH (Z) MUSÍ být navýšené, pokud byly implementované jenom zpětně kompatibilní opravy chyb. Oprava chyb je definována jako interní změna opravující nežádoucí chování programu.
 
 7. Číslo MINOR (Y) MUSÍ být zvýšené, když byla do API přidána nová, zpětně kompatibilní funkcionalita nebo pokud byla jakákoliv funkcionalita odebrána (jako zastaralá) i pokud neovlivňuje samotný API kód. MŮŽE zahrnout i změnu PATCH verze. Číslo PATCH verze se musí vynulovat vždy, když se změní MINOR verze.
 
